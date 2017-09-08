@@ -21,7 +21,9 @@ const streamOpts = {
 
 const comments = client.CommentStream(streamOpts);
 
-submitHbdPost(r);
+setInterval(function() {
+    submitHbdPost(r);
+}, 900000);
 
 comments.on('comment', comment => {
     if (!(comment.body.includes("Happy Birthday Tenzin")) || !(comment.body.includes("HappyBirthdayTenzin")) || !(comment.body.includes("Happybirthdaytenzin")) || !(comment.body.includes("happybirthdaytenzin"))) {
