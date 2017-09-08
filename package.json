@@ -1,0 +1,30 @@
+{
+  "name": "tenzinbot",
+  "version": "1.0.0",
+  "description": "tenzinbot",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshdas1/TenzinBot.git"
+  },
+  "keywords": [
+    "reddit",
+    "bot"
+  ],
+  "author": "Rakesh Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakeshdas1/TenzinBot/issues"
+  },
+  "homepage": "https://github.com/rakeshdas1/TenzinBot#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "moment": "^2.18.1",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.14.2"
+  }
+}
