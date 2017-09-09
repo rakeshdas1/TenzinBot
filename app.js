@@ -41,7 +41,7 @@ setInterval(function() {
     submitHbdPost(r);
 }, 900000);
 
-comments.on('comment', comment => {
+/* comments.on('comment', comment => {
     if (!(comment.body.includes("Happy Birthday Tenzin")) || !(comment.body.includes("HappyBirthdayTenzin")) || !(comment.body.includes("Happybirthdaytenzin")) || !(comment.body.includes("happybirthdaytenzin"))) {
         comment.reply("#You suck, you didn't say happy birthday to Tenzin! \n (This action was performed by a bot | [Source](https://github.com/rakeshdas1/tenzinbot))");
         console.log("replied to a bad comment");
@@ -51,7 +51,7 @@ comments.on('comment', comment => {
         console.log("replied thank you to a comment");
     }
 });
-
+ */
 function submitHbdPost(sw) {
     const postText = "Wishing Tenzin a Happy Birthday on " + moment().format('MM/DD/YYYY') + " at " + moment().format("h:mm a") + "\n(This action was performed by a bot | [Source](https://github.com/rakeshdas1/tenzinbot))";
     sw.getSubreddit('HappyBirthdayTenzin').submitSelfpost(
