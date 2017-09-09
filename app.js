@@ -28,10 +28,11 @@ setInterval(function() {
 comments.on('comment', comment => {
     if (!(comment.body.includes("Happy Birthday Tenzin")) || !(comment.body.includes("HappyBirthdayTenzin")) || !(comment.body.includes("Happybirthdaytenzin")) || !(comment.body.includes("happybirthdaytenzin"))) {
         comment.reply("#You suck, you didn't say happy birthday to Tenzin! \n (This action was performed by a bot | [Source](https://github.com/rakeshdas1/tenzinbot))");
-        console.log("replied to a comment");
+        console.log("replied to a bad comment");
     }
     else {
         comment.reply("#Thanks for saying Happy Birthday to Tenzin! \n (This action was performed by a bot | [Source](https://github.com/rakeshdas1/tenzinbot))");
+        console.log("replied thank you to a comment");
     }
 });
 
@@ -43,4 +44,5 @@ function submitHbdPost(sw) {
             text: postText
         }
     )
+    console.log("Submitted post!");
 }
