@@ -19,7 +19,11 @@ const streamOpts = {
     results: 25
 };
 
+console.log("Bot started!");
+
 const comments = client.CommentStream(streamOpts);
+
+submitHbdPost(r);
 
 setInterval(function() {
     submitHbdPost(r);
